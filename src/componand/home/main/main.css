@@ -1,0 +1,256 @@
+.Part1 {
+  width: 90%;
+  margin-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--surface);
+  border-radius: var(--radius-16);
+  padding: 2rem;
+  gap: 10px;
+}
+
+.Part1 h3 {
+  font-size: var(--title-3);
+  color: var(--on-surface);
+  font-weight: var(--weight-semiBold);
+}
+.part-a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.part-a-a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 46%;
+  padding: 20px;
+  background-color: var(--black-alpha-10);
+  border-radius: var(--radius-16);
+}
+.part-a-head {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.part-a-head-p {
+  color: var(--white);
+  background-color: var(--bg-aqi-1);
+  padding: 3px 8px;
+  border-radius: var(--radius-16);
+}
+
+.part-a-group {
+  display: flex;
+  display: row;
+  gap: 10px;
+  width: 100%;
+}
+
+.part-a-subgroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+}
+
+.fill {
+  scale: 2;
+}
+.part-a-subgroup span {
+  color: var(--on-surface-variant);
+  font-size: var(--label-2);
+}
+
+.part-a-subgroup h1 {
+  font-size: var(--body-3);
+  font-weight: var(--weight-regular);
+  color: var(--bg-aqi-1);
+}
+
+.part-a-b,
+.part-a-bb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.part-a-b {
+  justify-content: space-between;
+}
+.part-a-bb {
+  justify-content: center;
+  width: 45%;
+  gap: 2rem;
+}
+.part-a-c {
+  gap: 2rem;
+}
+
+.part-a-b-con {
+  display: flex;
+  flex-direction: column;
+}
+.part-a-b-logo > * {
+  scale: 2;
+}
+
+.part-b {
+  display: flex;
+  align-items: center;
+}
+.part-b-a {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.part-bb {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: var(--black-alpha-10);
+  padding: 20px;
+  border-radius: var(--radius-16);
+  gap: 30px;
+}
+.part-b-logo > * {
+  scale: 2.5;
+}
+.part-b-logo {
+  flex: 1;
+}
+.part-bbb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Part2 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: transparent;
+  gap: 20px;
+  margin-inline: 2rem;
+}
+
+.part2a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  margin-inline: 1rem;
+}
+.part2a > * {
+  flex: 1;
+}
+
+.part2a > div {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface);
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-16);
+  height: max-content;
+  gap: 5px;
+}
+.part2a > div > img {
+  width: 60px;
+}
+.Main {
+  width: 100%;
+  overflow-y: scroll;
+  margin-bottom: 10%;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+}
+
+.part2t:hover {
+  box-shadow: var(--shadow-2);
+}
+
+.foo {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin-inline: 5rem;
+}
+
+.foo h4 a {
+  color: var(--bg-aqi-1);
+  transition: all 0.3s ease-in-out;
+}
+.foo h4:hover {
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 450px) {
+  .Part1 {
+    width: 80%;
+    margin-inline: 0.5rem;
+    padding: 5%;
+  }
+  .Part2 {
+    margin-inline: 1rem;
+    padding: 0;
+  }
+  .part-a {
+    width: 95%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .part-b-a {
+    width: 100%;
+    flex-direction: column;
+  }
+  .part-a-a {
+    min-width: 90%;
+  }
+  .part-a-group {
+    flex-wrap: wrap;
+  }
+  .part-bb {
+    width: 90%;
+  }
+  .part2a > * {
+    flex: 0;
+  }
+  .part2a {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+  .foo {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .foo h4 {
+    width: max-content;
+  }
+  .Main {
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .part-a-b {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .part-a-bb {
+    width: 100%;
+  }
+}
